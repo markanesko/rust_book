@@ -34,16 +34,13 @@ fn main() {
     // let mut spaces = "   ";
     // spaces = spaces.len();
 
-
     // addition
     let sum = 5 + 10;
     println!("sum: {}", sum);
 
-
     // subtraction
     let difference = 95.5 - 4.3;
     println!("difference: {}", difference);
-
 
     // multiplication
     let product = 4 * 30;
@@ -69,7 +66,6 @@ fn main() {
 
     println!("c z and hec: {} {} {}", c, z, heart_eyed_cat);
 
-
     // compound types in rust are types that can save multiple values into one variable
     // two primitive compound types are
     // tuple and array
@@ -93,8 +89,41 @@ fn main() {
 
     println!("{}, {}, {}", first, second, third);
 
+    // the array type
+    // arrays have fixed length like tuples
 
+    let arr = [1, 2, 2, 4, 3];
 
+    println!("arr: {:#?}", arr);
+
+    let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+
+    println!("months: {:#?}", months);
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+
+    println!("a: {:#?}", a);
+
+    let a = [13; 15];
+
+    println!("a: {:#?}", a);
+
+    println!("first and third are => {} {}", a[0], a[2]);
+
+    // println!("index faild => {}", a[a.len() + 1]);
 }
 
 // differences betwwen variables and constants
@@ -103,7 +132,6 @@ fn main() {
 // With constants you must always annotate the type.
 // Constants can be declared in any scope, including the global scope, which makes them useful for values that many parts of code need to know about.
 // The last difference is that constants may be set only to a constant expression, not the result of a function call or any other value that could only be computed at runtime.
-
 
 // rust has scalar and compund types
 // Rust has four primary scalar types: integers, floating-point numbers, Booleans, and characters.
