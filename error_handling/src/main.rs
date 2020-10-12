@@ -108,3 +108,10 @@ fn read_username_from_file_shortest() -> Result<String, io::Error> {
 //     Ok(T),
 //     Err(E),
 // }
+
+
+// bad state is one of the following:
+
+    // The bad state is not something that’s expected to happen occasionally.
+    // Your code after this point needs to rely on not being in this bad state.
+    // There’s not a good way to encode this information in the types you use.
